@@ -1,7 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
-  <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
-  </category>
+<!-- Pattern for greeting -->
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Hello! How can I assist you today? If you're interested in computing job types, I can help you with recommendations. Just let me know your interests or skills!
+        </template>
+    </category>
+
+    <!-- Pattern for expressing interests -->
+    <category>
+        <pattern></pattern>
+        <template></template>
+    </category>
+    
+    <category>
+        <pattern>MY INTERESTS ARE *</pattern>
+        <template>
+            That's great! Based on your interests in <star>, here are five computing job types you might find interesting:
+            1. Software Developer
+            2. Data Scientist
+            3. Cybersecurity Analyst
+            4. UX/UI Designer
+            5. Cloud Architect
+            Let me know if you want more information about any of these job types!
+        </template>
+    </category>
+
+    <!-- Pattern for asking for more information -->
+    <category>
+        <pattern>TELL ME MORE ABOUT *</pattern>
+        <template>
+            Sure! Here's some information about <star>:
+            <!-- Add relevant information about the specific job type -->
+            <!-- You can provide details about the job responsibilities, required skills, etc. -->
+        </template>
+    </category>
+
+    <!-- Pattern for expressing skills -->
+    <category>
+        <pattern>I AM SKILLED IN *</pattern>
+        <template>
+            That's impressive! Based on your skills in <star>, here are five computing job types you might excel at:
+            1. Database Administrator
+            2. Network Engineer
+            3. Artificial Intelligence Engineer
+            4. Web Developer
+            5. IT Project Manager
+            Let me know if you'd like more information about any of these job types!
+        </template>
+    </category>
+
+    <!-- Pattern for other queries -->
+    <category>
+        <pattern>*</pattern>
+        <template>
+            I'm sorry, I'm a chatbot and I'm specialized in computing job recommendations. If you have any questions related to that, feel free to ask!
+        </template>
+    </category>
+
 </aiml>
